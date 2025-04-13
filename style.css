@@ -378,10 +378,32 @@ h4 .icons-font{
         font-size: 50%;
     }
     .project-about p{
-        font-size: 1.6rem;
+        font-size: 4px;
+    }
+    .project-about{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .project-image{
+        display: flex;
+        flex-grow: 1;
+        height: 20rem;
+        width: 30rem;
+    }
+    .our-project p{
+        font-size: 2rem;
+        margin: 6rem;
+        text-align: center;
+        display: flex;
+        flex-grow:1;
+    }
+   .our-project{
+           margin: 0;
     }
 }
-
 /* form secrion start */
  .form{
 
@@ -509,4 +531,10 @@ h4 .icons-font{
     html{
         font-size: 40%;
     }
+    .about-courses ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.1;
+}
 }
