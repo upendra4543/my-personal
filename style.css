@@ -33,6 +33,11 @@ html{
     align-items: center;
     column-gap: 1.4rem;
 }
+:link{
+    list-style: none;
+    text-decoration: none;
+}
+
 /* section-header */
 header{
     display: flex;
@@ -46,11 +51,13 @@ h1{
     font-weight: 600;
     color: antiquewhite;
 }
+
 header h1 span{
     font-size: 2rem;
     font-weight: 600;
     margin-left: 7rem;
 }
+
 header nav ul{
     list-style: none;
     display: flex;
@@ -68,6 +75,32 @@ header nav ul li a{
 }
 header nav ul li a:hover{
     color: rgb(180, 221, 219);
+
+}
+@media(max-width:700px){
+    htm{
+        font-size: 50%;
+    }
+    header h1 span{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-left: 0.5rem;
+    }
+    header nav ul li {
+        display: flex;
+        gap: -1rem;
+        margin-left: 1rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: antiquewhite;
+    }
 }
 /* section-hero */
 .section-hero{
@@ -118,6 +151,38 @@ section video {
     font-size:2.6rem ;
     background-color: aqua;
 }
+
+@media(max-width:820px)  {
+    html{
+        font-size: 50%;
+    }
+    .heading-1{
+        margin-top: -2rem;
+        font-size: 1.5rem;
+        color: #fff;
+        word-spacing: 1rem;
+        font-weight: 600;
+    }
+    .heading-2 ,strong{
+        font-size: 14rem;
+        color: #f4e4e7;
+        font-weight: 800;
+        letter-spacing: 1.5rem;
+        margin-top: 2.4rem;
+        
+      }
+
+}
+@media(max-width:620px){
+    .heading-2 ,strong{
+        font-size: 8rem;
+        color: #f4e4e7;
+        font-weight: 600;
+        letter-spacing: 1.5rem;
+        margin-top: 2.4rem;
+        
+      }
+}
 /* section-about */
 .section-about{
     margin: 4.2rem ;
@@ -138,8 +203,10 @@ section video {
       padding: 4rem;
 }
 .para-text{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #0f0808;
+    line-height: 1.5;
+    letter-spacing: .8px;
 }
 .about-image img{
     
@@ -150,11 +217,226 @@ section video {
     display: flex;
     gap: 1rem;
 }
+@media(max-width:1067px){
+    html{
+        font-size: 50%;
+    }
+    .about-image img{
+    
+        width: 60%;
+    }
+    .para-text{
+        font-size: 1.6rem;
+        color: #0f0808;
+        line-height: 1;
+        letter-spacing: .8px;
+    }
+    .btn-1 {
+        margin-top: 2.6rem;
+        display: flex;
+        gap: 1rem;
+    }
+}
+@media(max-width: 1000px){
+    html{font-size: 50%;}
+    .about-image img{
+    
+        width: 70%;
+    }
+    .para-text{
+        font-size: 1.2rem;
+        color: #0f0808;
+        line-height: 1.2;
+        letter-spacing: .4px;
+    }
+    .btn-1 {
+        margin-top: 1.6rem;
+        display: flex;
+        gap: 1rem;
+    }
+}
+@media(max-width:800px){
+    html{
+        font-size: 50%;
+    }
+    .grid-col-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .section-about{
+        margin: 2.2rem ;
+        background-color: #fcfafd;
+    
+    }
+    .container{
+        margin: 2rem;
+    }
+}
+/* SECTION MY SKILL */
+.myskill{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.myskils{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 4rem;
+}
+.myskill-container{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 2rem;
+justify-content: center;
+margin-left: 12rem;
+}
+
+.myskill-container h4{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 500;
+    height: 20rem;
+    width: 30rem;
+    border-radius: 10px;
+    padding: 2rem 4rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all .8s linear 500ms;
+}
+.myskill-container h4:hover{
+    transform:translate(-1rem,-1rem);
+}
+h4 .icons-font{
+    margin-right: 1rem;
+}
+
+@media(max-width:800px){
+    .myskill-container h4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: 700;
+        height: 15rem;
+        width: 20rem;
+        border-radius: 10px;
+        padding: 1.6rem 3.2rem;
+    }
+    .myskill-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 0.5rem;
+        justify-content: center;
+        margin-right: -1rem;
+        }
+}
+/* project section start */
+.our-project{
+    margin: 9rem;
+}
+.our-project h1{
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #800725;
+    text-align: center;
+    text-decoration: underline solid red 6px;
+}
+
+
+.project-about{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.our-project p{
+    font-size: 2.4rem;
+    margin: 6rem;
+    text-align: center;
+}
+.project-about p{
+    font-size: 2.3rem;
+}
+.project-image{
+    height: 40rem;
+    width: 60rem;
+}
+.project-about p{
+    display: flex;
+    flex-direction: column;
+}
+.project-about p:link{
+    margin-top: 1.5rem;
+}
+@media(max-width:920px){
+    html{
+        font-size: 50%;
+    }
+    .project-about p{
+        font-size: 1.6rem;
+    }
+}
+
+/* form secrion start */
+ .form{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+ }
+ .form-header{
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
+    word-spacing: .8rem;
+   
+ }
+ .form-para{
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    
+ }
+
+ .section-form{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    background-color: #e0f7fa;
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+ }
+
+ input{
+    display:block;
+    width: 28rem;
+    height: 3.6rem;
+    border-radius: 10px;
+ }
+ textarea{
+    width: 28rem;
+    height: 8.4rem;
+ }
+ label{
+    font-size: 1.6rem;
+ }
+ @media(max-width:800px){
+    html{
+        font-size: 50%;
+    }
+
+ }
 /* section-footer */
 .section-footer header {
     display: flex;
     align-items: center;
-    background-color: #8f8277;
+    background-color: #333;
     padding: 1.2rem 4.4rem;
     
 
@@ -196,10 +478,13 @@ section video {
     color: #fff;
 }
 .twitter{
-    background-color: #3e74c7;
+    background-color: #fff;
+    color: #3e74c7;
 }
 .grid-col-3{
-    background-color: #c4c1bf;
+    background-color: #f1f1f1;
+    color: #000;
+    font-size: 2.4rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -208,8 +493,9 @@ section video {
 }
 .about-courses ul li{
     list-style: none;
-    font-size: 1.2rem;
-    line-height: 1.8;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 .footer-content{
     display: flex;
@@ -218,4 +504,9 @@ section video {
 }
 .footer-content h6{
     font-size: 1.2rem;
+}
+@media(max-width:800px){
+    html{
+        font-size: 40%;
+    }
 }
