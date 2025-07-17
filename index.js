@@ -18,8 +18,8 @@ hideBtn[0].addEventListener("click", hidden);
 
  const dynamicText = document.getElementById("dynamicText");
 
-let current = "Upendra Shriwastava";
-let next = "Fullstack Developer";
+let current = " UPENDRA SHRIVASTAVA !";
+let next = "  FULLSTACK DEVELOPER";
 let isOriginal = true;
 
 function delay(ms) {
